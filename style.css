@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #222;
+}
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100%;
+    background: #222;
+    color: #fff;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+.sidebar h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin: 20px 0;
+}
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+.sidebar ul li a:hover {
+    color: #ff9800;
+}
+.main-content {
+    margin-left: 240px;
+    padding: 40px 30px;
+    max-width: 900px;
+}
+#intro {
+    margin-bottom: 40px;
+}
+.project-section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 24px;
+    margin-bottom: 32px;
+}
+.project-img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    display: block;
+}
+.learn-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 18px;
+    background: #ff9800;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+.learn-more:hover {
+    background: #e65100;
+}
+@media (max-width: 700px) {
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 15px 10px;
+        text-align: center;
+    }
+    .main-content {
+        margin-left: 0;
+        padding: 20px 10px;
+    }
+    .project-img {
+        max-width: 100%;
+    }
+} 
