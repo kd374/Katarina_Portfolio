@@ -155,12 +155,13 @@ body {
   margin-top: 0;
 }
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 32px;
   margin-top: 32px;
 }
 .project-card {
+  width: 100%;
   background: linear-gradient(120deg, #e3f0ff 60%, #bbdefb 100%);
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(21, 101, 192, 0.07);
@@ -169,6 +170,7 @@ body {
   flex-direction: column;
   transition: box-shadow 0.3s, transform 0.3s;
   animation: fadeIn 1.2s;
+  margin: 0 auto;
 }
 .project-card:hover {
   box-shadow: 0 8px 32px rgba(21, 101, 192, 0.13);
@@ -245,6 +247,13 @@ body {
   }
 }
 @media (max-width: 900px) {
+  .projects-grid {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .project-card {
+    width: 100%;
+  }
   .about-section, .projects-section, .contact-section {
     padding: 20px 8px;
   }
