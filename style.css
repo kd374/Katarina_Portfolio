@@ -6,8 +6,8 @@ body {
 }
 .site-header {
   width: 100%;
-  background: linear-gradient(90deg, #3a8dde 60%, #a259c6 90%, #ff6ec7 100%);
-  box-shadow: 0 2px 8px rgba(58, 141, 222, 0.08);
+  background: linear-gradient(90deg, #1565c0 60%, #42a5f5 100%);
+  box-shadow: 0 2px 8px rgba(21, 101, 192, 0.08);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -45,7 +45,7 @@ body {
   transition: background 0.2s, color 0.2s;
 }
 .nav-links a:hover, .nav-links .dropbtn:hover {
-  background: #a259c6;
+  background: #1976d2;
   color: #fff;
 }
 .dropdown {
@@ -60,7 +60,7 @@ body {
   position: absolute;
   background: #fff;
   min-width: 180px;
-  box-shadow: 0 8px 24px rgba(58, 141, 222, 0.12);
+  box-shadow: 0 8px 24px rgba(21, 101, 192, 0.12);
   border-radius: 6px;
   top: 40px;
   left: 0;
@@ -68,7 +68,7 @@ body {
   animation: slideDown 0.3s ease;
 }
 .dropdown-content a {
-  color: #3a8dde;
+  color: #1565c0;
   padding: 12px 20px;
   display: block;
   border-radius: 0;
@@ -77,8 +77,8 @@ body {
   transition: background 0.2s, color 0.2s;
 }
 .dropdown-content a:hover {
-  background: #f3e6fa;
-  color: #a259c6;
+  background: #e3f0ff;
+  color: #1976d2;
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -143,7 +143,7 @@ body {
   padding: 40px 30px;
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(58, 141, 222, 0.07);
+  box-shadow: 0 4px 24px rgba(21, 101, 192, 0.07);
   animation: fadeIn 1s;
   text-align: center;
 }
@@ -161,9 +161,9 @@ body {
   margin-top: 32px;
 }
 .project-card {
-  background: linear-gradient(120deg, #e3f0ff 60%, #f3e6fa 100%);
+  background: linear-gradient(120deg, #e3f0ff 60%, #bbdefb 100%);
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(162, 89, 198, 0.07);
+  box-shadow: 0 2px 8px rgba(21, 101, 192, 0.07);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -171,14 +171,14 @@ body {
   animation: fadeIn 1.2s;
 }
 .project-card:hover {
-  box-shadow: 0 8px 32px rgba(255, 110, 199, 0.13);
+  box-shadow: 0 8px 32px rgba(21, 101, 192, 0.13);
   transform: translateY(-4px) scale(1.01);
 }
 .project-card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
-  border-bottom: 1px solid #a259c6;
+  border-bottom: 1px solid #1976d2;
 }
 .project-info {
   padding: 24px 20px 20px 20px;
@@ -189,7 +189,7 @@ body {
 }
 .project-info h3 {
   margin: 0 0 10px 0;
-  color: #a259c6;
+  color: #1976d2;
 }
 .project-info p {
   flex: 1;
@@ -199,20 +199,20 @@ body {
   align-self: center;
   margin-top: 12px;
   padding: 10px 22px;
-  background: linear-gradient(90deg, #3a8dde 60%, #a259c6 100%);
+  background: linear-gradient(90deg, #1565c0 60%, #42a5f5 100%);
   color: #fff;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
   transition: background 0.2s, box-shadow 0.2s;
-  box-shadow: 0 2px 8px rgba(58, 141, 222, 0.08);
+  box-shadow: 0 2px 8px rgba(21, 101, 192, 0.08);
 }
 .learn-more:hover {
-  background: linear-gradient(90deg, #a259c6 60%, #ff6ec7 100%);
-  box-shadow: 0 4px 16px rgba(255, 110, 199, 0.13);
+  background: linear-gradient(90deg, #1976d2 60%, #64b5f6 100%);
+  box-shadow: 0 4px 16px rgba(21, 101, 192, 0.13);
 }
 .contact-section a {
-  color: #a259c6;
+  color: #1976d2;
   text-decoration: underline;
 }
 .site-footer {
@@ -229,11 +229,11 @@ body {
   border-radius: 50%;
   margin: 16px auto 24px auto;
   display: block;
-  box-shadow: 0 2px 8px rgba(58, 141, 222, 0.15);
-  border: 4px solid #a259c6;
+  box-shadow: 0 2px 8px rgba(21, 101, 192, 0.15);
+  border: 4px solid #1976d2;
 }
 @media (max-width: 1200px) {
-  .main-horizontal {
+  .main-vertical {
     flex-direction: column;
     align-items: center;
     gap: 24px;
