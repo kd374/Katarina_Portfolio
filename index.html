@@ -59,13 +59,19 @@
         </div>
       <!-- pROJECT 3-->
         <div class="project-card" id="project3">
-          <a href="https://example.com" target="_blank">
-            <img src="images/project3.jpg" alt="Project 3">
+          <a href="https://going-to-insertlink-here" target="_blank">
+            <div class="slideshow-container" id="project3-slideshow">
+              <img class="slide" src="images/project3_1.png" alt="Project 3 Slide 1" style="display:block;">
+              <img class="slide" src="images/project3_2.png" alt="Project 3 Slide 2" style="display:none;">
+              <img class="slide" src="images/project3_3.png" alt="Project 3 Slide 3" style="display:none;">
+              <button class="slide-btn left" onclick="plusSlides(-1, 'project3-slideshow'); event.stopPropagation();">&#10094;</button>
+              <button class="slide-btn right" onclick="plusSlides(1, 'project3-slideshow'); event.stopPropagation();">&#10095;</button>
+            </div>
           </a>
           <div class="project-info">
-            <a href="https://example.com" target="_blank" style="text-decoration:none;"><h3>Portfolio Builder</h3></a>
-            <p>A tool to help users create and customize their own portfolios easily. Fast, flexible, and user-friendly. Try it out!</p>
-            <a href="https://example.com" class="learn-more" target="_blank">Tap to learn more</a>
+            <a href="https://going-to-insertlink-here" target="_blank" style="text-decoration:none;"><h3>Dynamic Fast Robot</h3></a>
+            <p>Designed a fast autonomous robot implementing software and firmware which enables time of flight sensing, closed-loop PID/orientation control, Kalman filtering, Bayes filtering, mapping, localization, and path planning</p>
+            <a href="https://going-to-insertlink-here" class="learn-more" target="_blank">Tap to learn more</a>
           </div>
         </div>
         <div class="project-card" id="project4">
