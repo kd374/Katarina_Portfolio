@@ -184,7 +184,9 @@ body {
   border-radius: 10px;
   overflow: hidden;
   background: #e3f0ff;
-  /* No fixed width/height by default */
+
+  width: var(--slide-width, auto);
+  height: var(--slide-height, auto);
 }
 
 .slide {
@@ -193,8 +195,8 @@ body {
   object-fit: contain;
   width: var(--slide-width, auto);
   height: var(--slide-height, auto);
-  max-width: 100%;
-  max-height: 100%;
+  max-width: unset;
+  max-height: unset;
 }
 
 /* To override for a specific project, use:
