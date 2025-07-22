@@ -178,7 +178,7 @@ body {
 .slideshow-container {
   position: relative;
   width: 100%;
-  max-width: 700px;
+  max-width: none;
   margin: 0 auto 18px auto;
   border-radius: 10px;
   overflow: hidden;
@@ -194,9 +194,9 @@ body {
 
 .slide {
   width: var(--slide-width);
-  max-width: 100%;
   height: var(--slide-height);
-  max-height: 100%;
+  max-width: none;
+  max-height: none;
   object-fit: contain;
   display: none;
   border-radius: 10px;
