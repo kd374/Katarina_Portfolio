@@ -36,7 +36,13 @@
       <h2>Projects</h2>
       <div class="projects-grid">
         <div class="project-card" id="project1">
-          <img src="images/project1.jpg" alt="Project 1">
+          <div class="slideshow-container" id="project1-slideshow">
+            <img class="slide" src="images/project1_1.png" alt="Project 1 Slide 1" style="display:block;">
+            <img class="slide" src="images/project1_2.png" alt="Project 1 Slide 2" style="display:none;">
+            <img class="slide" src="images/project1_3.png" alt="Project 1 Slide 3" style="display:none;">
+            <button class="slide-btn left" onclick="plusSlides(-1, 'project1-slideshow')">&#10094;</button>
+            <button class="slide-btn right" onclick="plusSlides(1, 'project1-slideshow')">&#10095;</button>
+          </div>
           <div class="project-info">
             <h3>Awesome App</h3>
             <p>This is a cool app that solves real-world problems. Built with love and attention to detail. Check it out to learn more!</p>
@@ -98,6 +104,22 @@
         }
       });
     });
+
+    // Slideshow logic for project 1
+    function plusSlides(n, containerId) {
+      const container = document.getElementById(containerId);
+      const slides = container.getElementsByClassName('slide');
+      let current = 0;
+      for (let i = 0; i < slides.length; i++) {
+        if (slides[i].style.display === 'block') {
+          current = i;
+          slides[i].style.display = 'none';
+          break;
+        }
+      }
+      let next = (current + n + slides.length) % slides.length;
+      slides[next].style.display = 'block';
+    }
   </script>
 </body>
 </html> 
