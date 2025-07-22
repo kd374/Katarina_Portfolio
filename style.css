@@ -183,11 +183,11 @@ body {
   border-radius: 10px;
   overflow: hidden;
   background: #e3f0ff;
-  min-height: 340px;
+  min-height: 680px;
 }
 .slide {
   width: 100%;
-  height: 340px;
+  height: 680px;
   object-fit: cover;
   display: none;
   border-radius: 10px;
