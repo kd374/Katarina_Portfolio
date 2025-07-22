@@ -183,12 +183,15 @@ body {
   border-radius: 10px;
   overflow: hidden;
   background: #e3f0ff;
-  min-height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .slide {
   width: 100%;
-  height: 900px;
-  object-fit: cover;
+  max-width: 700px;
+  height: auto;
+  object-fit: contain;
   display: none;
   border-radius: 10px;
 }
@@ -215,7 +218,7 @@ body {
 .slide-btn.right { right: 16px; }
 .slide-btn:hover { background: #1565c0; }
 .project-info {
-  padding: 16px 20px 12px 20px;
+  padding: 12px 20px 8px 20px;
   flex: 1;
   display: flex;
   flex-direction: column;
